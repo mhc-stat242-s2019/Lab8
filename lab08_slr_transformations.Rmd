@@ -1,0 +1,59 @@
+---
+title: "Simple Linear Regression: Conditions and Transformations"
+subtitle: "Sleuth3 Chapter 8"
+output:
+  pdf_document:
+    fig_height: 2.8
+    fig_width: 6
+  html_document:
+    fig_height: 3
+    fig_width: 5
+  word_document:
+    fig_height: 3
+    fig_width: 5
+header-includes:
+  - \usepackage{booktabs}
+  - \usepackage{vwcol}
+geometry: margin=0.5in
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = TRUE)
+library(ggplot2)
+library(readr)
+library(dplyr)
+library(gridExtra)
+```
+
+## Example: Exercise 8.17 in Sleuth3
+
+Quote from book:
+
+> In a study of the effectiveness of biological control fo the exotic weed tansy ragwort, researchers manipulated the exposure to the ragwort flea beetle on 15 plots that had been planted with a high density of ragword.  Havesting the plots the next season, they measured the average dry mass of ragword remaining (gams/plant) and the flea beetle load (beetles/gram of ragword dry mass) to see if the ragwort plants in plots with high flea beetle loads were smaller as a result of herbivory by the beetles.  (Data from P. McEvoy and C. Cox, "Successful Biological Control of Ragwort, *Senecio jacobaea, by Introduced Insects in Oregon,", *Ecological Applications* 1 (4) (1991): 430-42.)
+
+Here is the data:
+
+```{r, echo=FALSE, message=FALSE}
+pest_control <- read_csv("http://www.evanlray.com/data/sleuth3/ex0817_pest_control.csv")
+head(pest_control)
+```
+
+Our explanatory variable is `Load`, and the response is `Mass`.
+
+#### 1. Make a suitable plot of the data.
+
+```{r}
+
+```
+
+#### 2. Through trial and error, find a suitable transformation of the data so that the linear regression conditions are satisfied as well as possible.  (Let's assume the plots were in different areas so that they can be regarded as independent.)
+
+```{r}
+
+```
+
+#### 3. Conduct a test of the claim that there is no association between the beetles load and the mean dry mass of ragweed harvested.
+
+```{r}
+
+```
